@@ -1,0 +1,14 @@
+$shade-light: 10% !global;
+$shade-dark: 10% !global;
+
+$primary:     #8e3329;
+$secondary:   #5a1321;
+$accent:      #d98328;
+$foreground:  #191919;
+$background:  #e9e9e9;
+
+$primary-light:     lighten($primary, $shade-light);
+$secondary-light:   lighten($secondary , $shade-light);
+$accent-light:      lighten($accent , $shade-light);
+$foreground-light:  lighten($foreground , $shade-light);
+$background-light:  lighten($background , $shade-light);

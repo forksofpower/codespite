@@ -2,5 +2,11 @@
   "name": "Codespite",
   "version": "0.0.1",
   "author": "Patrick Jones",
-  "Description": "Theme build for codespite.com"
+  "Description": "Theme build for codespite.com",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-less": "^3.0.5",
+    "gulp-sass": "^2.1.1"
+  }
 }

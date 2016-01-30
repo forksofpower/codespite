@@ -18,36 +18,29 @@
     <link rel="stylesheet" type="text/css" href="{{asset "/css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{asset "/css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "/css/style.css"}}" />
     {{! Ghost outputs important style and meta data with this tag }}
-    
+
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
      <section id="wrapper">
         {{!-- menu and subscribe button --}}
         {{> header}}
-        
+
         {{!-- body --}}
         <div class="ajax-container container">
             {{{body}}}
             <div id="body-class" style="display: none;" class="{{body_class}}"></div>
         </div>
-        
+
         {{!-- footer --}}
         {{> footer}}
-        
+
     </section>
 
-    
-    
     {{ghost_foot}}
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script type="text/javascript" src="{{asset "js/libs/jquery.fitvids.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/libs/jquery.history.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/libs/nprogress.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 </body>
 </html>

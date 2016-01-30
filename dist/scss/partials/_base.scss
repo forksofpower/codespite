@@ -1,0 +1,23 @@
+#main-footer {
+    background-color: $primary;
+    height: 260px;
+    margin-top: 40px;
+    padding-top: 90px;
+}
+.footer-copyright {
+    color: $secondary-light;
+    font-size: 14px;
+    margin:0;
+    text-align: center;
+    text-transform: uppercase;
+    .test-text {
+      color: $accent;
+    }
+}
+.footer-copyright a {
+    color: #757575;
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+}
