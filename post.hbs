@@ -1,0 +1,47 @@
+{{!< default}}
+
+<main class="content" role="main">
+    <section class="{{post_class}}">
+         {{#post}}
+            <header class="codespite_post_header">         
+                <h1 class="codespite_post_title">{{{title}}}</h1>
+            </header>
+
+            <article>
+                {{content}}
+            </article>
+                {{#if author}}
+                    <section class="author">
+                        <h3>Written By:</h3>
+                        <h4>{{author.name}}</h4>
+                        <p>{{author.bio}}</p>
+                    </section>
+                {{/if}}
+                <div class="row">
+                    {{#prev_post}}
+                    <div class="col-md-6" style="background-image: url('{{image}}')">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <h3>{{title}}</h3>
+                                <p>{{excerpt}}</p>
+                                <a href="{{url}}"><h1>Read More!</h1></a>
+                            </div>
+                        </div>
+                    </div>
+                    {{/prev_post}}
+                    {{#next_post}}
+                    <div class="col-md-6" style="background-image: url('{{image}}')">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                <h3>{{title}}</h3>
+                                <p>{{excerpt}}</p>
+                                <a href="{{url}}"><h1>Read More!</h1></a>
+                            </div>
+                        </div>
+                    </div>
+                    {{/next_post}}
+                </div>
+         {{/post}}
+    </section>
+
+</main>
