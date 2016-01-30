@@ -3,11 +3,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <div class="footer-copyright">
-                  {{#get "posts" include="tags,author"}}
-                    {{#foreach posts}}
-                        {{title}}
-                    {{/foreach}}
-                  {{/get}}
+                  {{#get "tags" limit="all"}}{{tags}}{{/get}}
                 </div>
             </div>
         </div>
